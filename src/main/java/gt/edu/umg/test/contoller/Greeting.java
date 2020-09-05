@@ -13,7 +13,8 @@ public class Greeting {
 	@GetMapping("/hello")
 	public String getGreeting() {
 		Date date = new Date();
-		return "Hello world" + date.toString();
+		//esto solo debe aparecer en testing
+		return "Hello world " + date.toString();
 	}
 
 }
